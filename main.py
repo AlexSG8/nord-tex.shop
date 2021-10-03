@@ -76,7 +76,7 @@ class Parse(QtWidgets.QDialog, progress_gui.Ui_Progress):
     @QtCore.Slot()
     def closeEvent(self, event):
         close = QtWidgets.QMessageBox()
-        close.setText('Снежана, Вы уверены, что хотите остановить парсинг?')
+        close.setText('Вы уверены, что хотите остановить парсинг?')
         close.setStandardButtons(QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.Cancel)
         close = close.exec()
 
